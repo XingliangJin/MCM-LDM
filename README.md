@@ -1,5 +1,5 @@
 # Arbitrary Motion Style Transfer with Multi-condition Motion Latent Diffusion Model
-[[project](https://xingliangjin.github.io/MCM-LDM-Web/)]
+[[project](https://xingliangjin.github.io/MCM-LDM-Web/)][[paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Song_Arbitrary_Motion_Style_Transfer_with_Multi-condition_Motion_Latent_Diffusion_Model_CVPR_2024_paper.pdf)]
 
 <p align="center"><img src="images/pipeline.png" align="center"> <br></p>
 
