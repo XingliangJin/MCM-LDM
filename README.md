@@ -96,6 +96,7 @@ Some parameters:
 The outputs:
 
 - `npy file`: the generated motions with the shape of (nframe, 22, 3)
+- `mp4 file`: the generated motion videos
 
 </details>
 
