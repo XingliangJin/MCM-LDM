@@ -1,0 +1,65 @@
+activation: gelu
+align_pose_frontview: false
+archiname: transformer
+batch_size: 20
+clip_image_losses:
+- cosine
+clip_lambda_ce: 1.0
+clip_lambda_cosine: 1.0
+clip_lambda_mse: 1.0
+clip_lambdas:
+  image:
+    cosine: 1.0
+  text:
+    cosine: 1.0
+clip_map_images: false
+clip_map_text: false
+clip_mappers_type: no_mapper
+clip_text_losses:
+- cosine
+cuda: true
+datapath: ./data/amass_xyz/amass_30fps_db.pt
+dataset: amass
+debug: false
+device: 0
+expname: exps
+folder: ./exps/paper-model
+glob: true
+glob_rot:
+- 3.141592653589793
+- 0
+- 0
+jointstype: smpl
+lambda_kl: 0.0
+lambda_rc: 100.0
+lambda_rcxyz: 100.0
+lambda_vel: 100.0
+lambda_velxyz: 1.0
+lambdas:
+  rc: 100.0
+  rcxyz: 100.0
+  vel: 100.0
+latent_dim: 512
+losses:
+- rc
+- rcxyz
+- vel
+lr: 0.0001
+max_len: -1
+min_len: -1
+modelname: cvae_transformer_rc_rcxyz_vel
+modeltype: cvae
+normalize_encoder_output: false
+num_epochs: 100
+num_frames: 60
+num_layers: 8
+num_seq_max: -1
+pose_rep: rot6d
+sampling: conseq
+sampling_step: 1
+snapshot: 10
+translation: true
+vertstrans: false
+nfeats: 6
+njoints: 25
+num_classes: 1

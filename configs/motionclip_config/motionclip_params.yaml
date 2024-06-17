@@ -1,0 +1,83 @@
+activation: gelu
+ae_after_generation: false
+align_pose_frontview: false
+appearance_mode: motionclip
+archiname: transformer
+batch_size: 20
+checkpointname: ./exps/paper-model/checkpoint_0100.pth.tar
+clip_image_losses:
+- cosine
+clip_lambda_ce: 1.0
+clip_lambda_cosine: 1.0
+clip_lambda_mse: 1.0
+clip_lambdas:
+  image:
+    cosine: 1.0
+  text:
+    cosine: 1.0
+clip_map_images: false
+clip_map_text: false
+clip_mappers_type: no_mapper
+clip_text_losses:
+- cosine
+cuda: true
+datapath: ./data/amass_db/amass_30fps_db.pt
+dataset: amass
+debug: false
+decoder_test: new
+device: cuda:0
+duration_mode: mean
+expname: exps
+fact_latent: 1
+figname: fig_{:03d}
+folder: ./exps/paper-model
+force_visu_joints: true
+fps: 20
+glob: true
+glob_rot:
+- 3.141592653589793
+- 0
+- 0
+images_dir: ./action_images
+input_file: assets/paper_texts.txt
+jointstype: smpl
+lambda_kl: 0.0
+lambda_rc: 100.0
+lambda_rcxyz: 100.0
+lambda_vel: 100.0
+lambda_velxyz: 1.0
+lambdas:
+  rc: 100.0
+  rcxyz: 100.0
+  vel: 100.0
+latent_dim: 512
+losses:
+- rc
+- rcxyz
+- vel
+lr: 0.0001
+max_len: -1
+min_len: -1
+modelname: cvae_transformer_rc_rcxyz_vel
+modeltype: cvae
+nfeats: 6
+njoints: 25
+noise_diff_action: random
+noise_same_action: random
+normalize_encoder_output: false
+num_actions_to_sample: 5
+num_classes: 1
+num_epochs: 5000
+num_frames: 60
+num_layers: 8
+num_samples_per_action: 5
+num_seq_max: -1
+outputxyz: true
+pose_rep: rot6d
+reconstruction_mode: ntf
+sampling: conseq
+sampling_step: 1
+snapshot: 10
+translation: true
+vertstrans: false
+zero_global_orient: false
