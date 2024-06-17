@@ -37,7 +37,7 @@ Run the script to download dependencies materials:
 ```
 bash prepare/download_smpl_models.sh
 ```
-To Evaluate the Reconstruction Performance of the Model During Training:
+To evaluate the reconstruction performance of the model during training:
 ```
 bash prepare/download_t2m_evaluators.sh
 ```
@@ -79,7 +79,7 @@ cp -r ../HumanML3D/HumanML3D ./datasets/humanml3d
 ## 🎬 Demo
 
 <details>
-  <summary><b> Text-to-Motion (using provided motions in 'demo' floder) </b></summary>
+  <summary><b> Motion Style Transfer (using provided motions in 'demo' floder) </b></summary>
 
 Run the following script:
 
