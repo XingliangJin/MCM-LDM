@@ -8,8 +8,8 @@ DATASET:
   TRANSFORM_PATH: 'deps/transforms/'
   WORD_VERTILIZER_PATH: 'deps/t2m/glove/'
   HUMANML3D:
-    ROOT: 'dataset/humanml3d' # HumanML3D directory
-    SPLIT_ROOT: 'dataset/humanml3d' # HumanML3D splits directory
+    ROOT: 'datasets/humanml3d' # HumanML3D directory
+    SPLIT_ROOT: 'datasets/humanml3d' # HumanML3D splits directory
 
 
 model:
