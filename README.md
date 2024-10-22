@@ -112,7 +112,9 @@ Then, run the following command:
 python -m train --cfg configs/config_mld_humanml3d.yaml --cfg_assets configs/assets.yaml --batch_size 128 --nodebug
 ```
 
+## Evaluation
 
+Please use [this repostory](https://github.com/XingliangJin/Eval_MCM-LDM) for evaluation.
 
 
 
